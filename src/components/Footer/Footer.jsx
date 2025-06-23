@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid bg-dark text-white-50 border-top py-4" style={{borderColor: "rgba(256, 256, 256, .1) !important;"}}>
+            <div className="container-fluid bg-dark text-white-50 border-top py-4" style={{borderColor: "rgba(256, 256, 256, .1) !important"}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">

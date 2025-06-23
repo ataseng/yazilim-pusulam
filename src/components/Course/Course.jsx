@@ -1,7 +1,9 @@
+import im from "../../assets/images/courses-1.jpg";
+
 const Course = ({ data }) => {
     return (
         <div className="courses-item position-relative">
-            <img className="img-fluid" src={data.image} alt="" />
+            <img className="img-fluid" src={im} alt="" />
             <div className="courses-text">
                 <h4 className="text-center text-white px-3">{data.title}</h4>
                 <div className="border-top w-100 mt-3">
