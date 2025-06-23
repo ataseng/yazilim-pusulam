@@ -1,7 +1,15 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import "./assets/css/style.css"
+import { createRoot } from 'react-dom/client';
+import * as $ from "jquery";
+import "./assets/css/bootstrap.css";
+import 'owl.carousel/dist/assets/owl.carousel.css'; {/* this line */}
+import 'owl.carousel/dist/assets/owl.theme.default.css'; {/* this line */}
+import "./assets/css/style.css";
 import App from './App.jsx'
+import "./assets/lib/easing/easing.min.js";
+import "./assets/lib/waypoints/waypoints.min.js";
+import "./assets/lib/counterup/counterup.min.js";
+import "./assets/js/main.js";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
