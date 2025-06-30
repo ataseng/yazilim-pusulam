@@ -7,11 +7,11 @@ const Header = () => {
             <div className="container text-center my-5 py-5">
                 <h1 className="text-white mt-4 mb-4">Dijital Gelişim</h1>
                 <h1 className="text-white display-1 mb-5">Yazılım Eğitimleri</h1>
-                {/* <div className="mx-auto mb-5" style={{
+                <div className="mx-auto mb-5" style={{
                     width: "100%",
                     maxWidth: 600
                 }}>
-                    <div className="input-group">
+                    {/* <div className="input-group">
                         <div className="input-group-prepend">
                             <button className="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Kurslar</button>
@@ -27,8 +27,8 @@ const Header = () => {
                             <div className="input-group-append">
                                 <button className="btn btn-secondary px-4 px-lg-5">Ara</button>
                             </div>
-                    </div>
-                </div> */}
+                    </div> */}
+                </div>
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import course_5 from "../../assets/images/courses-5.jpg";
 import course_6 from "../../assets/images/courses-6.jpg";
 
 
-export const courses_data = [
+export const courseData = [
     {
         "id" : 1,
         "title" : "Temel Seviye Web Tasarım & Geliştirme Kursu",

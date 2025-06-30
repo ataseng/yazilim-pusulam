@@ -15,13 +15,6 @@ const MainLayout = ( {children} ) => {
         <>
             <Topbar />
             <Navbar />
-            <Header />
-            <About />
-            <Feature />
-            <Courses />
-            <Team />
-            <Testimonial />
-            <Contact />
             <main>
                 {children}
             </main>

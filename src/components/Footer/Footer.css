@@ -7,3 +7,20 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.text-white {
+    font-size: medium;
+}
+.m-0{
+    font-size: small;
+    color: white;
+}
+.form-control{
+    padding: 15px;
+    
+}
+.login-btn{
+    background-color: var(--white);
+    color: var(--primary-color);
+    height: 50px;
+    margin: 55px;
+}

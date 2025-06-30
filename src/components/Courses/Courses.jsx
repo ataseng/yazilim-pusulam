@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Course from "../Course/Course";
-// import { courses_data } from "./courses_data";
+import { courseData } from "./courseData";
 import OwlCarousel from 'react-owl-carousel';
 import { useState } from "react";
 
@@ -28,16 +28,16 @@ const Courses = () => {
         }
     }
 
-    const [courseData, setCourseData] = useState([]);
+    // const [courseData, setCourseData] = useState([]);
 
-    useEffect(() => {
-        fetch("http://127.0.0.1:8000/mentor/courses")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            setCourseData(data);
-        });
-    }, []);
+    // useEffect(() => {
+    //     fetch("http://127.0.0.1:8000/mentor/courses")
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log(data)
+    //         setCourseData(data);
+    //     });
+    // }, []);
 
     return (
         <div className="container-fluid px-0 py-5">

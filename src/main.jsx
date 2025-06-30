@@ -10,9 +10,13 @@ import "./assets/lib/easing/easing.min.js";
 import "./assets/lib/waypoints/waypoints.min.js";
 import "./assets/lib/counterup/counterup.min.js";
 import "./assets/js/main.js";
+import { BrowserRouter } from 'react-router' 
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )

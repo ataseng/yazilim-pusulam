@@ -1,0 +1,212 @@
+/* MentorProfile.css */
+
+
+.profil_Bigileri {
+    width: 300px;
+    height: 320px;
+    border: 1px solid var(--primary-color);
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 20px;
+    border-radius: 16px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: var(--white);
+    box-shadow: 1px 1px 8px 0px #726e6e;
+    overflow: hidden;
+}
+
+.profil_Bigileri p {
+    margin: 0;
+    background-color: var(--white);
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.baslik1 p {
+    font-weight: bolder;
+}
+
+.profil_Bigileri hr {
+    width: 250px;
+    margin: 0 auto;
+    background-color: var(--grey);
+}
+
+.KişiselBİlgiler p {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.profil_Duzenleme {
+    width: 730px;
+    height: 1100px;
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 8px 0px #726e6e;
+    overflow: hidden;
+}
+
+.profil_Duzenleme p {
+    margin: 0;
+    background-color: var(--white);
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.baslik2 p {
+    font-weight: bolder;
+}
+
+.profil_Duzenleme hr {
+    width: 675px;
+    margin: 0 auto;
+    background-color: var(--grey);
+}
+
+.foto-Yukleme {
+    background-color: var(--white);
+    padding-top: 10px;
+    display: flex;
+}
+
+
+.foto-Yukleme svg {
+    padding-left: 35px;
+    background-color: var(--white);
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.foto-yazi-grup {
+    background-color: var(--white);
+}
+
+.foto-buton {
+    width: 140px;
+    height: 25px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.foto-yazi-grup p {
+    display: inline-block;
+    color: var(--black);
+}
+
+.bilgi-form {
+    width: 700px;
+    height: 460px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.bilgi-form p {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 20px;
+    color: var(--secondary-color);
+}
+
+.form-kapsayici {
+    display: flex;
+    padding: 20px;
+    background-color: var(--white);
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.input-alani {
+    background-color: var(--white);
+    margin-top: 20px;
+}
+
+.form-sutun {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 8px;
+    height: 40px;
+}
+
+#sertifika {
+    background-color: var(--white);
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 1px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-kapsayici label {
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding-bottom: 0;
+}
+
+.ilgi-alani {
+    background-color: var(--white);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ilgi-alani label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.checkbox-grup {
+    background-color: var(--white);
+    display: block;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+.checkbox-grup input {
+    height: 15px;
+    width: 15px;
+}
+
+.kaydet-buton {
+    width: auto;
+    height: 30px;
+    justify-content: center;
+    display: block;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
