@@ -19,7 +19,7 @@ const courses = [
         students: 397,
         image: "https://img.icons8.com/clouds/452/database.png",
         keywords: ["Backend Geliştirme", "Yapay Zeka"],
-         link: "/Rnn/Rnn"
+        link: "/Rnn/Rnn"
     },
     {
         id: 1,
@@ -110,16 +110,16 @@ export default function CoursePage() {
                 <div className="course-grid">
                     {filteredCourses.map((course) => (
                         <Link
-                            to={course.link} key= {course.id} style={{ textDecoration: 'none' }} 
-                            // to={{
-                            //     pathname: "/course-detail",
-                            //     search: `?id=${course.id}`
-                            // }}
-        
+                            to={course.link} key={course.id} style={{ textDecoration: 'none' }}
                         >
                             <div className="course-card">
-                                <img src={course.image} alt={course.title} />
-                                <h4>{course.title}</h4>
+                                <div className="course-image">
+                                    <img src={course.image} alt={course.title} />
+                                </div>
+                                <div className="course-explanation">
+                                    <h4>{course.title}</h4>
+                                </div>
+
                                 <div className="card-footer">
                                     <span>👍 {course.likes}</span>
                                     <span>👥 {course.students.toLocaleString()}</span>

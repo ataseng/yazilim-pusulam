@@ -10,10 +10,10 @@
 
 .category-panel {
     width: 220px;
+    height: 600px;
     padding: 20px;
     border-right: 1px solid var(--white-secondary);
     margin-left: 120px;
-    border-radius: 8PX;
     background-color: var(  --primary-color);
     color: var(--white);
 
@@ -26,6 +26,12 @@
 .category-panel div {
     margin-bottom: 10px;
 }
+.category-panel input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  accent-color: var(--white); /* Tarayıcı destekliyse rengi */
+  cursor: pointer;
+}
 
 .course-top {
     display: flex;
@@ -35,7 +41,6 @@
     flex-wrap: wrap;
     gap: 16px;
     border: 1px var(--primary-color);
-    border-radius: 8px;
     color: var(--primary-color);
     background-color:var(--white);
     padding-left: 20px;
@@ -68,7 +73,7 @@
     width: 100%;
     max-width: 300px;
     padding: 8px 12px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     border: 1px solid var(--white-secondary);
 }
 
@@ -94,48 +99,58 @@
 }
 
 .course-card {
-    border: 1px solid var(--white-secondary);
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    background-color:  var(--white);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-height: 300px;
-    /* Örnek: kartların minimum yüksekliği */
+  display: flex;
+  flex-direction: column; /* dikey düzen */
+  justify-content: space-between; /* üst ve altı ayırır */
+  border: 1px solid var(--white-secondary);
+  padding: 15px;
+  background-color: var(--white);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 290px;
+  height: 435px;
 }
-
-.course-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 10px;
+.course-card img{
+    height: 258px;
+    width: 258px;
 }
+.course-image{
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.course-explanation{
+    /* height: 100px; */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 .course-card h4 {
-    font-size: medium;
-    text-align: left;
-    margin-top: 75px;
-    margin-bottom: 30px;
-    text-decoration: none;
+  font-size: medium;
+  text-align: left;
+  margin-bottom: 5px;
+  text-decoration: none;
+  /* height: 60px; yazı boyutları eşit dursun */
 }
 
-.level {
+
+/* .level {
     display: inline-block;
     padding: 4px 8px;
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 13px;
     color: var(--white);
-}
+} */
 
 .card-footer {
-    background-color: var(--pink);
-    height: 40px;
-    color: var(--pink);
-    border-radius: 8px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: var(--white)
+  background-color: var(--pink);
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--white);
+  margin-top: auto; /* ALTTA sabitler */
+  overflow: hidden;
 }
