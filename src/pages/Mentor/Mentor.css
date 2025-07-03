@@ -5,15 +5,18 @@
 }
 .mentor-sidebar {
   width: 250px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding: 20px;
   border-right: 1px solid #ddd;
   margin-left: 170px;
   border-radius: 8px;
+  color: var(--white);
+  font-size: 16px;
 }
 
 .mentor-sidebar h4 {
   margin-bottom: 15px;
+  color: var(--white);
 }
 
 .mentor-sidebar label {
@@ -21,10 +24,17 @@
   margin-bottom: 10px;
   font-size: 14px;
 }
-.mentor-sidebar input{
+/* .mentor-sidebar input{
     height: 15px;
+} */
+.mentor-sidebar input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  accent-color: var(--white); /* Tarayıcı destekliyse rengi */
+  cursor: pointer;
+  margin-right: 5px;
+  border: 1px var(--secondary-color) solid;
 }
-
 
 /* Main content */
 

@@ -92,20 +92,17 @@ const Mentor = () => {
                     </label>
                 ))}
             </aside>
-
-
             {/* <div className="mentor-top-bar">
-          <input
-            type="text"
-            placeholder="Mentor ara..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <select>
-            <option>En Yeni</option>
-            <option>En Popüler</option>
-          </select>
-        </div> */}
+                <input
+                    type="text"
+                    placeholder="Mentor ara..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+            </div> */}
+
+
+
 
             <div className="mentor-card-container">
                 {filteredMentors.map((mentor, idx) => (
