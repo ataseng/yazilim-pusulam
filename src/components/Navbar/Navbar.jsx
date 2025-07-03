@@ -24,13 +24,13 @@ const Navbar = () => {
                         <Link to="/iletisim" className="nav-item nav-link">İletişim</Link>
                     </div>
                     <Link to="/Login/Login">
-                        <a href="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Giriş Yap</a>
+                        <Link to="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Giriş Yap</Link>
                     </Link>
                     <Link to="/EditProfileMentor/EditProfileMentor">
-                        <a href="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Mentor düzenle</a>
+                        <Link to="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Mentor düzenle</Link>
                     </Link>
                      <Link to="/EditProfileMenti/EditProfileMenti">
-                        <a href="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Menti düzenle</a>
+                        <Link to="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Menti düzenle</Link>
                     </Link>
 
                 </div>

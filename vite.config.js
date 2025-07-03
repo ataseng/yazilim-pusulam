@@ -11,5 +11,5 @@ export default defineConfig({
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-],
+  ]
 })

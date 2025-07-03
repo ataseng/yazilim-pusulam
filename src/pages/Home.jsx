@@ -11,8 +11,6 @@ import Topbar from "../components/Topbar/Topbar";
 import { Link } from "react-router";
 import React, { useState } from "react";
 
-
-
 function Home() {
   return (
     <>

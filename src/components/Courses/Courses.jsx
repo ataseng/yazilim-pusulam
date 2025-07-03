@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Course from "../Course/Course";
-import { courseData } from "./courseData";
+// import { courseData } from "./courseData";
 import OwlCarousel from 'react-owl-carousel';
 import { useState } from "react";
 
@@ -28,16 +28,15 @@ const Courses = () => {
         }
     }
 
-    // const [courseData, setCourseData] = useState([]);
+    const [courseData, setCourseData] = useState([]);
 
-    // useEffect(() => {
-    //     fetch("http://127.0.0.1:8000/mentor/courses")
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data)
-    //         setCourseData(data);
-    //     });
-    // }, []);
+    useEffect(() => {
+        fetch("http://127.0.0.1:8000/course")
+        .then(response => response.json())
+        .then(data => {
+            setCourseData(data);
+        });
+    }, []);
 
     return (
         <div className="container-fluid px-0 py-5">
@@ -57,6 +56,7 @@ const Courses = () => {
                     ))
                 }
             </OwlCarousel>
+            {/* TODO kayitli degilse goster */}
             <div className="row justify-content-center bg-image mx-0 mb-5">
                 <div className="col-lg-6 py-5">
                     <div className="bg-white p-5 my-5">

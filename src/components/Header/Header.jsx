@@ -15,9 +15,9 @@ const Header = () => {
                 <h1 className="header-text display-4 font-weight-bold">
 
                     <div className='dynamic-text'>
-                        <p> 1-e-1  </p> <br />
+                        <p> 1'e 1  </p> <br />
                         <Typewriter
-                            words={['Mentorluk', 'Kişiye Özel Kurslar', 'Yazılım', 'Farklı Tarz Kaynaklar']}
+                            words={['Mentörlük', 'Kişiye Özel Kurslar', 'Farklı Öğrenme Stilleri']}
                             loop={true}
                             cursor
                             cursorStyle="|"
@@ -27,9 +27,7 @@ const Header = () => {
                         />
                     </div>
                     <p>İle Yazılım Pusulan</p>
-
                 </h1>
-
             </div>
             <div className="column-right">
                 <img src={headerPicture} alt="mentor" />
