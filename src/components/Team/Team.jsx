@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import Instructor from "./Instructor";
 // import { instructors_data } from "./instructors_data";
-import OwlCarousel from 'react-owl-carousel';
+// import OwlCarousel from 'react-owl-carousel';
 import { useDispatch, useSelector } from "react-redux";
 import { listMentors } from "../../redux/actions/mentorActions";
+
+import Loadable from '@loadable/component';
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Team = () => {
 

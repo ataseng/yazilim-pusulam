@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import Course from "../Course/Course";
 // import { courseData } from "./courseData";
-import OwlCarousel from 'react-owl-carousel';
+// import OwlCarousel from 'react-owl-carousel';
 import { useState } from "react";
+import Loadable from '@loadable/component';
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Courses = () => {
 

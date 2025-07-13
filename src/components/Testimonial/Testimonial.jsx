@@ -1,6 +1,9 @@
 import TestimonialItem from "./TestimonialItem"
 import { testimonials_data } from "./testimonials_data"
-import OwlCarousel from 'react-owl-carousel';
+// import OwlCarousel from 'react-owl-carousel';
+
+import Loadable from '@loadable/component';
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Testimonial = () => {
 
