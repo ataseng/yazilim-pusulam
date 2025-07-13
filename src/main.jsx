@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client';
-import * as $ from "jquery";
+import $ from "jquery"; 
 import "./assets/css/bootstrap.css";
 import 'owl.carousel/dist/assets/owl.carousel.css'; {/* this line */ }
 import 'owl.carousel/dist/assets/owl.theme.default.css'; {/* this line */ }

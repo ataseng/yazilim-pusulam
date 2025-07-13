@@ -11,7 +11,7 @@ import EditProfileMentor from "./pages/EditProfileMentor/EditProfileMentor"
 import Login from "./pages/Login/Login";
 import Mentor from "./pages/Mentor/Mentor";
 import MentorPage from "./pages/MentorPage/MentorPage"
-
+import $ from "jquery" 
 
 
 function App() {

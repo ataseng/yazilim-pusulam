@@ -3,6 +3,7 @@ import Course from "../Course/Course";
 // import { courseData } from "./courseData";
 // import OwlCarousel from 'react-owl-carousel';
 import { useState } from "react";
+// import * as $ from "jquery" 
 import Loadable from '@loadable/component';
 const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 

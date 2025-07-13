@@ -4,8 +4,9 @@ import Instructor from "./Instructor";
 // import OwlCarousel from 'react-owl-carousel';
 import { useDispatch, useSelector } from "react-redux";
 import { listMentors } from "../../redux/actions/mentorActions";
-
+// import * as $ from "jquery" 
 import Loadable from '@loadable/component';
+
 const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Team = () => {
