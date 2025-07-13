@@ -12,7 +12,7 @@ export const listMentors = () => async (dispatch) => {
         });
 
         const { data } = await axios.get(
-            `http://127.0.0.1:8000/user/mentor/all/`
+            `https://ataseng.pythonanywhere.com/user/mentor/all/`
         );
 
         dispatch({

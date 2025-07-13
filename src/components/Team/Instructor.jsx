@@ -3,7 +3,7 @@ import { Link } from "react-router"
 const Instructor = ({ data }) => {
     return (
         <div className="team-item">
-            <img className="img-fluid w-100" src={`http://127.0.0.1:8000/${data.user.avatar}`} alt="mentor-image" />
+            <img className="img-fluid w-100" src={`https://ataseng.pythonanywhere.com/${data.user.avatar}`} alt="mentor-image" />
             <div className="bg-light text-center p-4">
                 <h5 className="mb-3">{data.user.first_name} {data.user.last_name}</h5>
                 <p className="mb-2">{data.expertise}</p>

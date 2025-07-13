@@ -6,7 +6,7 @@ const Course = ({ data }) => {
             <img style={{
                 width: 400,
                 height: 300
-            }} className="img-fluid" src={`http://127.0.0.1:8000/${data.image}`} alt="" />
+            }} className="img-fluid" src={`https://ataseng.pythonanywhere.com/${data.image}`} alt="" />
             <div className="courses-text">
                 <h4 className="text-center text-white px-3">{data.title}</h4>
                 <div className="border-top w-100 mt-3">

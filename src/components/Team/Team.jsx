@@ -5,7 +5,6 @@ import OwlCarousel from 'react-owl-carousel';
 import { useDispatch, useSelector } from "react-redux";
 import { listMentors } from "../../redux/actions/mentorActions";
 
-
 const Team = () => {
 
     const dispatch = useDispatch();
@@ -51,7 +50,7 @@ const Team = () => {
             992: {
                 items: mentors.length > 2 ? 3 : 2
             }
-        }
+        },
     }
 
     return (

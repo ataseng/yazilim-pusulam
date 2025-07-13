@@ -31,7 +31,7 @@ const Courses = () => {
     const [courseData, setCourseData] = useState([]);
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/course")
+        fetch("https://ataseng.pythonanywhere.com/course/")
         .then(response => response.json())
         .then(data => {
             setCourseData(data);
