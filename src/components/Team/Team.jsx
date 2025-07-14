@@ -5,9 +5,9 @@ import Instructor from "./Instructor";
 import { useDispatch, useSelector } from "react-redux";
 import { listMentors } from "../../redux/actions/mentorActions";
 // import * as $ from "jquery" 
-import Loadable from '@loadable/component';
+// import Loadable from '@loadable/component';
 
-const OwlCarousel = Loadable(() => import('react-owl-carousel'));
+// const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Team = () => {
 
@@ -65,7 +65,7 @@ const Team = () => {
                     <h1 className="display-4">Mentörlerimizle Tanışın</h1>
                 </div>
 
-                <OwlCarousel className="team-carousel position-relative owl-nav" style={{
+                {/* <OwlCarousel className="team-carousel position-relative owl-nav" style={{
                     padding: "0 30px"
                 }} {...options}>
                     {
@@ -73,7 +73,7 @@ const Team = () => {
                             <Instructor key={`instructor_${mentor_data.id}`} data={mentor_data} />
                         ))
                     }
-                </OwlCarousel>
+                </OwlCarousel> */}
             </div>
         </div>
     )
