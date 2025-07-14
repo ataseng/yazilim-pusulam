@@ -4,8 +4,8 @@ import Course from "../Course/Course";
 // import OwlCarousel from 'react-owl-carousel';
 import { useState } from "react";
 // import * as $ from "jquery" 
-// import Loadable from '@loadable/component';
-// const OwlCarousel = Loadable(() => import('react-owl-carousel'));
+import Loadable from '@loadable/component';
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Courses = () => {
 
@@ -52,13 +52,13 @@ const Courses = () => {
                 </div>
             </div>
 
-            {/* <OwlCarousel className="courses-carousel" margin={4} {...options}>
+            <OwlCarousel className="courses-carousel" margin={4} {...options}>
                 {
                     courseData?.map(course_data => (
                         <Course key={`course_${course_data.id}`} data={course_data} />
                     ))
                 }
-            </OwlCarousel> */}
+            </OwlCarousel>
             {/* TODO kayitli degilse goster */}
             <div className="row justify-content-center bg-image mx-0 mb-5">
                 <div className="col-lg-6 py-5">

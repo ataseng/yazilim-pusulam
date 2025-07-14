@@ -2,8 +2,8 @@ import TestimonialItem from "./TestimonialItem"
 import { testimonials_data } from "./testimonials_data"
 // import OwlCarousel from 'react-owl-carousel';
 // import * as $ from "jquery" 
-// import Loadable from '@loadable/component';
-// const OwlCarousel = Loadable(() => import('react-owl-carousel'));
+import Loadable from '@loadable/component';
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const Testimonial = () => {
 
@@ -32,13 +32,13 @@ const Testimonial = () => {
                     </div>
                     <div className="col-lg-7">
 
-                        {/* <OwlCarousel className="testimonial-carousel" loop autoplay {...options}>
+                        <OwlCarousel className="testimonial-carousel" loop autoplay {...options}>
                             {
                                 testimonials_data.map((testimonial_data) => (
                                     <TestimonialItem key={`testimonial_${testimonial_data.id}`} data={testimonial_data} />
                                 ))
                             }
-                        </OwlCarousel> */}
+                        </OwlCarousel>
                     </div>
                 </div>
             </div>
