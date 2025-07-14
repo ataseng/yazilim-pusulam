@@ -27,8 +27,6 @@ function App() {
         <Route path="/Login/Login" element={<Login/>}/>
         <Route path="/Mentor/Mentor" element={<Mentor/>}/>
         <Route path="/MentorPage/MentorPage" element={<MentorPage/>}/>
-
-
       </Routes>
     </MainLayout>
   );

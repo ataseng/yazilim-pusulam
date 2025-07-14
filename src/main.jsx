@@ -15,7 +15,7 @@ import store from './redux/store';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='https://ataseng.github.io/yazilim-pusulam'>
+    <BrowserRouter basename='/yazilim-pusulam'>
       <Provider store={store}>
         <App />
       </Provider>
