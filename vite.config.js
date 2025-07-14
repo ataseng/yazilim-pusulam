@@ -11,5 +11,6 @@ export default defineConfig({
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-  ]
+  ],
+  base: "https://ataseng.github.io/yazilim-pusulam"
 })
