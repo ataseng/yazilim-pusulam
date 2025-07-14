@@ -2,7 +2,11 @@
   "name": "frontend",
   "homepage": "https://ataseng.github.io/yazilim-pusulam",
   "contributors": [
-    {"name": "Osman DURDAĞ"}
+    {
+        "name": "Osman DURDAĞ",
+        "email": "osmandurdag@hotmail.com",
+        "url": "https://osmandurdag.com"
+    }
   ],
   "private": true,
   "version": "0.0.0",
