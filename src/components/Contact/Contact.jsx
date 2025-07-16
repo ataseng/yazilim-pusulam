@@ -13,7 +13,7 @@ const Contact = () => {
                                 </div>
                                 <div className="mt-n1">
                                     <h4>Konumumuz</h4>
-                                    <p className="m-0">Atatürk Üniversitesi Mühendislik Fakültesi</p>
+                                    <p>Atatürk Üniversitesi Mühendislik Fakültesi</p>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center mb-5">
@@ -22,7 +22,7 @@ const Contact = () => {
                                 </div>
                                 <div className="mt-n1">
                                     <h4>Bizi Arayın</h4>
-                                    <p className="m-0">0442 231 1288</p>
+                                    <p >0442 231 1288</p>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center">
@@ -31,7 +31,7 @@ const Contact = () => {
                                 </div>
                                 <div className="mt-n1">
                                     <h4>E-Posta Gönderin</h4>
-                                    <p className="m-0">destek@ataseng.com</p>
+                                    <p>destek@ataseng.com</p>
                                 </div>
                             </div>
                         </div>

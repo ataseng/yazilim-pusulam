@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const Footer = () => {
     return (
         <>
-            <div className="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style={{
+            <div className="container-fluid position-relative overlay-top bg-dark text-white-50 " style={{
                 marginTop: 90
             }}>
                 <div className="container mt-5 pt-5">
@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid bg-dark text-white-50 border-top py-4" style={{ borderColor: "rgba(256, 256, 256, .1) !important" }}>
+            <div className="container-fluid bg-primary text-white-50 border-top py-4" style={{ borderColor: "rgba(256, 256, 256, .1) !important" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">

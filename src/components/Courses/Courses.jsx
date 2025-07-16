@@ -1,46 +1,11 @@
 import { useEffect } from "react";
 import Course from "../Course/Course";
-// import { courseData } from "./courseData";
-// import OwlCarousel from 'react-owl-carousel';
-import { useState } from "react";
-// import * as $ from "jquery" 
-import Loadable from '@loadable/component';
-const OwlCarousel = Loadable(() => import('react-owl-carousel'));
+import { courseData } from "./courseData";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const Courses = () => {
-
-    const options = {
-        autoplay: true,
-        smartSpeed: 1500,
-        loop: true,
-        dots: false,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            992: {
-                items: 4
-            }
-        }
-    }
-
-    const [courseData, setCourseData] = useState([]);
-
-    useEffect(() => {
-        fetch("https://ataseng.pythonanywhere.com/course/")
-        .then(response => response.json())
-        .then(data => {
-            setCourseData(data);
-        });
-    }, []);
-
     return (
         <div className="container-fluid px-0 py-5">
             <div className="row mx-0 justify-content-center pt-5">
@@ -52,14 +17,29 @@ const Courses = () => {
                 </div>
             </div>
 
-            <OwlCarousel className="courses-carousel" margin={4} {...options}>
-                {
-                    courseData?.map(course_data => (
-                        <Course key={`course_${course_data.id}`} data={course_data} />
-                    ))
-                }
-            </OwlCarousel>
-            {/* TODO kayitli degilse goster */}
+            <div className="px-3">
+                <Swiper
+                    modules={[Autoplay]}
+                    autoplay={{ delay: 2500 }}
+                    loop={true}
+                    spaceBetween={20}
+                    breakpoints={{
+                        0: { slidesPerView: 1 },
+                        576: { slidesPerView: 2 },
+                        768: { slidesPerView: 3 },
+                        992: { slidesPerView: 4 },
+                    }}
+                >
+                    {
+                        courseData?.map(course_data => (
+                            <SwiperSlide key={`course_${course_data.id}`}>
+                                <Course data={course_data} />
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
+            </div>
+
             <div className="row justify-content-center bg-image mx-0 mb-5">
                 <div className="col-lg-6 py-5">
                     <div className="bg-white p-5 my-5">
@@ -96,4 +76,4 @@ const Courses = () => {
     )
 }
 
-export default Courses
+export default Courses;

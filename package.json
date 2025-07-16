@@ -3,9 +3,9 @@
   "homepage": "https://ataseng.github.io",
   "contributors": [
     {
-        "name": "Osman DURDAĞ",
-        "email": "osmandurdag@hotmail.com",
-        "url": "https://osmandurdag.com"
+      "name": "Osman DURDAĞ",
+      "email": "osmandurdag@hotmail.com",
+      "url": "https://osmandurdag.com"
     }
   ],
   "private": true,
@@ -27,13 +27,15 @@
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-owl-carousel": "^2.3.3",
-    "react-player": "^2.16.0",
+    "react-player": "^2.16.1",
     "react-redux": "^9.2.0",
     "react-router": "^7.6.3",
     "react-simple-typewriter": "^5.0.1",
+    "react-swiper": "^0.1.5",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
     "routes": "^2.1.0",
+    "swiper": "^11.2.10",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {

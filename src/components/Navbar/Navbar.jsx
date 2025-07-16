@@ -23,16 +23,9 @@ const Navbar = () => {
                         <Link to="/Mentor/Mentor" className="nav-item nav-link">Mentorluk</Link>
                         <Link to="/iletisim" className="nav-item nav-link">İletişim</Link>
                     </div>
-                    <Link to="/Login/Login">
-                        <Link to="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Giriş Yap</Link>
-                    </Link>
-                    <Link to="/EditProfileMentor/EditProfileMentor">
-                        <Link to="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Mentor düzenle</Link>
-                    </Link>
-                     <Link to="/EditProfileMenti/EditProfileMenti">
-                        <Link to="#" className="btn btn-primary py-2 px-4 d-none d-lg-block">Menti düzenle</Link>
-                    </Link>
-
+                    <Link to="/Login/Login" className="btn btn-primary py-2 px-4 d-none d-lg-block">Giriş Yap</Link>
+                    <Link to="/EditProfileMentor/EditProfileMentor" className="btn btn-primary py-2 px-4 d-none d-lg-block">Mentor düzenle</Link>
+                    <Link to="/EditProfileMenti/EditProfileMenti" className="btn btn-primary py-2 px-4 d-none d-lg-block">Menti düzenle</Link>
                 </div>
             </nav>
         </div>

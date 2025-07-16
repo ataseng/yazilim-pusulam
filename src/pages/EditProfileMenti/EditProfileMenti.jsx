@@ -1,8 +1,9 @@
 import "./EditProfileMenti.css";
+import { FaUser } from 'react-icons/fa';
 
 const Profile = () => {
   return (
-  
+
     <div className="menti-profile-wrapper">
       {/* Sol kutu */}
       <div className="menti-profil_Bilgileri">
@@ -27,7 +28,7 @@ const Profile = () => {
         </div>
 
         <div className="menti-foto-Yukleme">
-          <i className="fa-solid fa-user" style={{ fontSize: "60px" }}></i>
+          <FaUser style={{ fontSize: '60px', marginLeft: '35px', marginRight: '20px', marginBottom: '10px' }} />
           <div className="menti-foto-yazi-grup">
             <button className="menti-foto-buton">Fotoğraf Yükle</button>
             <p>Maks. 20MB. JPG ve PNG dosyaları.</p>
@@ -89,10 +90,11 @@ const Profile = () => {
                 </label>
               </div>
             </div>
+            <button className="menti-kaydet-buton">KAYDET</button>
+
           </form>
         </div>
 
-        <button className="menti-kaydet-buton">DEĞİŞİKLİKLERİ KAYDET</button>
       </div>
     </div>
   );

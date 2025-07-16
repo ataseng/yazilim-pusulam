@@ -12,14 +12,14 @@ const Feature = () => {
                             <h6 className="d-inline-block position-relative text-secondary text-uppercase pb-2">Neden Bizi Seçmelisiniz?</h6>
                             <h1 className="display-4">Neden Bizimle Öğrenmeye Başlamalısınız?</h1>
                         </div>
-                        <p className="mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, numquam quo non in accusamus eos repudiandae libero reiciendis esse? Minima, distinctio aliquam quasi, quidem, voluptas ipsa iusto vel vero sapiente recusandae non. Recusandae enim, blanditiis odit dolorem explicabo asperiores adipisci, molestiae, ullam neque fugit hic ea quia earum est porro!</p>
+                        <p className="mb-4 pb-2"> YAZILIM SERÜVENİNDE KAYBOLMA, YAZILIM PUSULAN HEP YANINDA</p>
                         <div className="d-flex mb-3">
                             <div className="btn-icon bg-primary mr-4">
                                 <i className="fa fa-2x fa-graduation-cap text-white"></i>
                             </div>
                             <div className="mt-n1">
                                 <h4>Uzman Mentörler</h4>
-                                <p>Belirlediğiniz alanda doğru yolda ilerleyebilmeniz için 7 / 24 iletişime geçip destek ve yönlendirme alabileceğiniz uzman mentörler.</p>
+                                <p>Alanında deneyimli mentor kadromuz, bireysel öğrenme yolculuğunuzda size rehberlik eder. Sadece teknik bilgi değil; kariyer planlama, proje geliştirme ve sektörel yönlendirme konusunda da yanınızdalar.</p>
                             </div>
                         </div>
                         <div className="d-flex mb-3">
@@ -27,8 +27,8 @@ const Feature = () => {
                                 <i className="fa fa-2x fa-certificate text-white"></i>
                             </div>
                             <div className="mt-n1">
-                                <h4>Bitirme Sertifikası</h4>
-                                <p>Başarıyla tamamladığınız eğitimlerden sonra CV'nize ekleyebileceğiniz sertifikanız ile portföyünüzü güçlendirin.</p>
+                                <h4>Güncel Eğitim İçeriği</h4>
+                                <p>Sürekli yenilenen içeriklerimiz sayesinde, yazılım dünyasındaki en güncel teknolojileri ve trendleri takip ederek öğrenirsiniz. Temel konulardan ileri düzeye kadar geniş bir yelpazede eğitim sunuyoruz.</p>
                             </div>
                         </div>
                         <div className="d-flex">
@@ -36,8 +36,8 @@ const Feature = () => {
                                 <i className="fa fa-2x fa-book-reader text-white"></i>
                             </div>
                             <div className="mt-n1">
-                                <h4>Güncel İçerikler</h4>
-                                <p className="m-0">Belirlediğiniz alanda en güncel ve detaylı içeriklerle geleceğe en doğru adımları atın.</p>
+                                <h4>Yapay Zekâ Desteği</h4>
+                                <p>Yapay zekâ tabanlı sistemimiz, öğrenme stilinize ve seviyenize uygun içerikleri önerir. Böylece daha hızlı, verimli ve kişiselleştirilmiş bir öğrenme deneyimi yaşarsınız.</p>
                             </div>
                         </div>
                     </div>
