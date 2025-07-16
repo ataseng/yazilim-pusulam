@@ -1,11 +1,24 @@
 import Instructor from "./Instructor";
-import { instructors_data } from "./instructors_data";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-const repeatedData = [...instructors_data, ...instructors_data]; // 2x çoğalt
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { listMentors } from "../../redux/actions/mentorActions";
 
 const Team = () => {
+
+    const dispatch = useDispatch();
+
+    const mentorList = useSelector(state => state.mentorList);
+    const { error, loading, mentors } = mentorList;
+
+    useEffect(() => {
+
+        dispatch(listMentors());
+
+    }, [dispatch]);
+
     return (
         <div className="container-fluid py-5">
             <div className="container py-5">
@@ -22,16 +35,16 @@ const Team = () => {
                     breakpoints={{
                         0: { slidesPerView: 1 },
                         576: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        992: { slidesPerView: 3 },
+                        768: { slidesPerView: mentors.length > 2 ? 3 : 2 },
+                        992: { slidesPerView: mentors.length > 3 ? 4 : mentors.length > 2 ? 3 : 2 },
                     }}
                     className="team-carousel"
                     style={{ padding: "0 30px" }}
                 >
                     {
-                        repeatedData.map((instructor_data, index) => (
+                        mentors.map((mentor_data, index) => (
                             <SwiperSlide key={`instructor_${index}`}>
-                                <Instructor data={instructor_data} />
+                                <Instructor data={mentor_data} />
                             </SwiperSlide>
                         ))
                     }

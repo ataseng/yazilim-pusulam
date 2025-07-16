@@ -83,7 +83,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="col-md-6 text-center text-md-right">
-                            <p className="m-0"><a className="text-white" href="https://ataseng.com">ATASENG - Future Minds</a>
+                            <p className="m-0"><a className="text-white" href="https://ataseng.com" target="_blank" rel="noreferrer">ATASENG - Future Minds</a>
                             </p>
                         </div>
                     </div>

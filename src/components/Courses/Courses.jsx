@@ -1,11 +1,44 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Course from "../Course/Course";
-import { courseData } from "./courseData";
+// import { courseData } from "./courseData";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const Courses = () => {
+
+    // const options = {
+    //     autoplay: true,
+    //     smartSpeed: 1500,
+    //     loop: true,
+    //     dots: false,
+    //     nav: false,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         576: {
+    //             items: 2
+    //         },
+    //         768: {
+    //             items: 3
+    //         },
+    //         992: {
+    //             items: 4
+    //         }
+    //     }
+    // }
+
+    const [courseData, setCourseData] = useState([]);
+
+    useEffect(() => {
+        fetch("https://ataseng.pythonanywhere.com/course/")
+        .then(response => response.json())
+        .then(data => {
+            setCourseData(data);
+        });
+    }, []);
+
     return (
         <div className="container-fluid px-0 py-5">
             <div className="row mx-0 justify-content-center pt-5">
@@ -26,8 +59,8 @@ const Courses = () => {
                     breakpoints={{
                         0: { slidesPerView: 1 },
                         576: { slidesPerView: 2 },
-                        768: { slidesPerView: 3 },
-                        992: { slidesPerView: 4 },
+                        768: { slidesPerView: courseData.length > 2 ? 3 : 2 },
+                        992: { slidesPerView: courseData.length > 3 ? 4 : courseData.length > 2 ? 3 : 2},
                     }}
                 >
                     {
