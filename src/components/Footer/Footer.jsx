@@ -21,7 +21,7 @@ const Footer = () => {
                                 </a>
 
                             </a>
-                            <p className="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nisi, molestiae placeat voluptatibus earum tempore, praesentium libero maxime itaque fugit totam corporis sequi expedita. Neque?</p>
+                            <p className="m-0">YAZILIM SERÜVENİNDE KAYBOLMA, YAZILIM PUSULAN HEP YANINDA</p>
                         </div>
                         {/* <div className="col-md-6 mb-5">
                             <h3 className="text-white mb-4">Haber Bülteni</h3>
@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid bg-primary text-white-50 border-top py-4" style={{ borderColor: "rgba(256, 256, 256, .1) !important" }}>
+            <div className="container-fluid bg-primary text-white-50 border-top py-2" style={{ borderColor: "rgba(256, 256, 256, .1) !important" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">

@@ -5,7 +5,7 @@
     padding: 20px;
     width: 80%;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 120px;
 }
 
@@ -41,7 +41,8 @@
 }
 
 .rnn-section label {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 8px;
     font-size: 13.5px;
     background-color: var(--white-secondary);
@@ -77,7 +78,7 @@
 
 .rnn-video-wrapper {
     margin-top: 30px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     border-radius: 10px;
     text-align: center;
     overflow: hidden;

@@ -19,7 +19,7 @@ const courses = [
         students: 397,
         image: "https://img.icons8.com/clouds/452/database.png",
         keywords: ["Backend Geliştirme", "Yapay Zeka"],
-        link: "/Rnn/Rnn"
+        link: "/Rnn"
     },
     {
         id: 1,

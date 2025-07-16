@@ -1,9 +1,23 @@
 // MentorProfile.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import './EditProfileMentor.css';
 import { FaUser } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUserDetails } from '../../redux/actions/userActions';
 
 const MentorProfile = () => {
+  const dispatch = useDispatch();
+
+    const user_details = useSelector(state => state.userLogin);
+    const { error, loading, userInfo } = user_details;
+
+    useEffect(() => {
+
+        dispatch(getUserDetails());
+
+    }, [dispatch]);
+
+
   return (
     <div className="mentor-profile-container">
       <div className="profil_Bigileri">
@@ -12,10 +26,34 @@ const MentorProfile = () => {
           <hr />
         </div>
         <div className="KişiselBİlgiler">
-          <p>İsim</p>
-          <p>Soyisim</p>
-          <p>E-posta</p>
-          <p>Telefon No</p>
+          <p>İsim
+          <br />
+          <span style={{
+            color: "black",
+            borderTop: "1px solid #bbb"
+          }}>{userInfo.first_name}</span>
+          </p>
+          <p>Soyisim
+          <br />
+          <span style={{
+            color: "black",
+            borderTop: "1px solid #bbb"
+          }}>{userInfo.last_name}</span>
+          </p>
+          <p>E-posta
+          <br />
+          <span style={{
+            color: "black",
+            borderTop: "1px solid #bbb"
+          }}>{userInfo.email}</span>
+          </p>
+          <p>Telefon No
+          <br />
+          <span style={{
+            color: "black",
+            borderTop: "1px solid #bbb"
+          }}>{userInfo.phone_number}</span>
+          </p>
         </div>
       </div>
 

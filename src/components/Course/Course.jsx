@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Course = ({ data }) => {
     return (
         <div className="courses-item position-relative">
@@ -11,7 +13,8 @@ const Course = ({ data }) => {
                     </div>
                 </div>
                 <div className="w-100 bg-white text-center p-4" >
-                    <a className="btn btn-primary" href="detail.html">Kurs Detayı</a>
+                    <Link className="btn btn-primary" to="/Rnn">Kurs Detayı</Link>
+                    {/* <a className="btn btn-primary" href=""></a> */}
                 </div>
             </div>
         </div>

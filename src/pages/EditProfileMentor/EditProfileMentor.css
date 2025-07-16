@@ -36,7 +36,6 @@
 }
 
 .KişiselBİlgiler p {
-    padding-bottom: 20px;
     padding-top: 10px;
     font-weight: 400;
 }
@@ -141,7 +140,6 @@
 }
 
 input {
-    width: 300px;
     height: 30px;
     padding: 8px;
     border-radius: 6px;

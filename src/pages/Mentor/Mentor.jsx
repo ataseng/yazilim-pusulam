@@ -18,7 +18,7 @@ const mentorData = [
         desc: "Tutkulu bir yazılımcı ve mentor.",
         tags: ["Cloud", "Kariyer", "JavaScript"],
         price: 140,
-        link: "/MentorPage/Mentorpage"
+        link: "/MentorPage"
     },
     {
         name: "özgül kaya",
@@ -101,13 +101,10 @@ const Mentor = () => {
                 />
             </div> */}
 
-
-
-
             <div className="mentor-card-container">
                 {filteredMentors.map((mentor, idx) => (
                     <div key={idx} className="mentor-card">
-                        <img className="mentor-img" src={mentor.img} alt={mentor.name} />
+                        <img className="mentor-img" src="https://ataseng.pythonanywhere.com//media/user/avatar/female_avatar.jpg" alt={mentor.name} />
                         <div className="mentor-info">
                             <div className="mentor-header">
                                 <h2>{mentor.name} <span className="mentor-country">TR</span></h2>
@@ -132,14 +129,9 @@ const Mentor = () => {
                             <div className="mentor-footer">
                                 <div className="mentor-price">Starting from <strong>${mentor.price}</strong> / month</div>
 
-                                {filteredMentors.map((mentorData) => (
-                                    <Link to={mentorData.link}>
-                                        <button className="mentor-view-btn">View Profile</button>
-                                    </Link>
-
-                                ))}
-
-
+                                <Link to={mentor.link}>
+                                    <button className="mentor-view-btn">View Profile</button>
+                                </Link>
 
                             </div>
                         </div>

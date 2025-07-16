@@ -70,7 +70,7 @@ const Rnn = () => {
       <div className="rnn-content">
         <h2>{selectedContent.title}</h2>
         <div className="rnn-video-wrapper">
-          <ReactPlayer url={selectedContent.videoUrl} controls={true} />
+          <ReactPlayer width={"100%"} url={selectedContent.videoUrl} controls={true} />
         </div>
         <div className="rnn-description">
           <p>{selectedDescription}</p>

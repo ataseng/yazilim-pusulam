@@ -33,9 +33,6 @@ import {
 } from "../constants/userConstants";
 import axios from "axios";
 
-import { ORDER_LIST_MY_RESET } from "../constants/orderConstants";
-
-
 export const login = (email, password) => async (dispatch) => {
     try {
         dispatch({
@@ -49,9 +46,9 @@ export const login = (email, password) => async (dispatch) => {
         };
 
         const { data } = await axios.post(
-            "/api/users/login/",
+            "https://ataseng.pythonanywhere.com/user/login/",
             {
-                username: email,
+                email,
                 password
             },
             config
@@ -82,9 +79,6 @@ export const logout = () => (dispatch) => {
     });
     dispatch({
         type: USER_DETAILS_RESET
-    });
-    dispatch({
-        type: ORDER_LIST_MY_RESET
     });
     dispatch({
         type: USER_LIST_RESET

@@ -39,11 +39,10 @@
     justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    gap: 16px;
-    border: 1px var(--primary-color);
+    /* border: 1px var(--primary-color); */
     color: var(--primary-color);
     background-color:var(--white);
-    padding-left: 20px;
+    /* padding-left: 20px; */
     height: 60px;
 
 }
@@ -52,7 +51,6 @@
     font-size: 24px;
     margin: 0;
     white-space: nowrap;
-
 }
 
 .course-education p {
@@ -63,18 +61,16 @@
 
 .search-bar {
     text-align: right;
-    margin: 5px 5px;
-    flex: 1;
-    margin-right: 10px;
-
 }
 
 .search-bar input {
     width: 100%;
-    max-width: 300px;
-    padding: 8px 12px;
+    height: 40px;
+    padding: 12px 12px;
+    text-align: right;
     /* border-radius: 6px; */
-    border: 1px solid var(--white-secondary);
+    border: 1px solid #bbb;
+    font-size: 12px;
 }
 
 
@@ -92,10 +88,15 @@
 }
 
 .course-grid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 20px; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .course-card {
@@ -106,7 +107,7 @@
   padding: 15px;
   background-color: var(--white);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 290px;
+  width: 360px;
   height: 435px;
 }
 .course-card img{

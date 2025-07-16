@@ -16,10 +16,7 @@ const Testimonial = () => {
                             <h1 className="display-4">Öğrencilerimiz Ne Diyor?</h1>
                         </div>
                         <p >
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores illum fugit perspiciatis quo
-                            consequuntur optio vitae aperiam qui doloremque quidem tempora velit reprehenderit eius, nisi fugiat
-                            labore vel dolor veniam molestiae pariatur dolorem accusantium! Magnam, officiis, velit, quibusdam
-                            eligendi accusamus provident harum quisquam perspiciatis nulla aperiam commodi nam numquam possimus?
+                            Projemizi daha önce deneyimleyen kullanıcılarımızın geri bildirimleri, sistemin ne kadar etkili ve faydalı olduğunu ortaya koyuyor. İşte onlardan bazıları:
                         </p>
                     </div>
                     <div className="col-lg-7">

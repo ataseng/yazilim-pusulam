@@ -11,6 +11,7 @@ import EditProfileMentor from "./pages/EditProfileMentor/EditProfileMentor"
 import Login from "./pages/Login/Login";
 import Mentor from "./pages/Mentor/Mentor";
 import MentorPage from "./pages/MentorPage/MentorPage"
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -18,15 +19,16 @@ function App() {
     <MainLayout>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/CoursePage/CoursePage" element={<CoursePage />} />
+        <Route path="/CoursePage" element={<CoursePage />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Rnn/Rnn" element={<Rnn />} />
-        <Route path="/Profile/Profile" element={<Profile/>} />
-        <Route path="/EditProfileMenti/EditProfileMenti" element={<EditProfileMenti/>}/>
-        <Route path="/EditProfileMentor/EditProfileMentor" element={<EditProfileMentor/>}/>
-        <Route path="/Login/Login" element={<Login/>}/>
-        <Route path="/Mentor/Mentor" element={<Mentor/>}/>
-        <Route path="/MentorPage/MentorPage" element={<MentorPage/>}/>
+        <Route path="/Rnn" element={<Rnn />} />
+        <Route path="/Profile" element={<Profile/>} />
+        <Route path="/EditProfileMenti" element={<EditProfileMenti/>}/>
+        <Route path="/EditProfileMentor" element={<EditProfileMentor/>}/>
+        <Route path="/Login" element={<Login/>}/>
+        <Route path="/Mentor" element={<Mentor/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/MentorPage" element={<MentorPage/>}/>
       </Routes>
     </MainLayout>
   );

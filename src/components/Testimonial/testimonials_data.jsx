@@ -7,14 +7,14 @@ export const testimonials_data = [
         "id" : 1,
         "name": "Öğrenci 1",
         "category":"Web Tasarımı",
-        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias magni id atque est accusantium, minus maxime, molestiae sapiente aliquam ducimus fugiat neque laudantium, explicabo quam.",
+        "content": "Yazılım öğrenmeye nereden başlayacağımı bilmiyordum. Bu platform sayesinde hem Türkçe kaynak bulabildim hem de alanları tanıyarak kendime en uygun yolu çizebildim. Mentorluk sistemi de çok destekleyiciydi.",
         "image" : testimonial_1
     },
     {
         "id" : 2,
         "name": "Öğrenci 2",
         "category":"Web Tasarımı",
-        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias magni id atque est accusantium, minus maxime, molestiae sapiente aliquam ducimus fugiat neque laudantium, explicabo quam.",
+        "content": "Sektöre geçiş yapmayı düşünüyordum ama kafamda çok fazla soru işareti vardı. Platformdaki içerikler, sade anlatımı ve yol gösterici yapısıyla benim için gerçekten fark yarattı.",
         "image" : testimonial_2
     }
 
